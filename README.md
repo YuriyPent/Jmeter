@@ -11,3 +11,14 @@ Modify the request json data content with the following code pattern:
  Argument arg = arguments.getArgument(0);
  arg.setValue("postData");
  ```
+ Use the following code pattern to modify the rest response content:
+ ```
+  String response_data = prev.getResponseDataAsString();
+  prev.setResponseData("reqDencryptJSON".getBytes("UTF-8"));
+ ```
+ Print information using logs
+ ```
+ log.info("Script execution failed=========PostProcessor==================", exception);
+ log.info("Script execution failed=========PostProcesso===================");
+  ```
+  Use mvn dependency:copy-dependencies -DoutputDirectory=D:/lib -DincludeScope=compile to copy the custom lib dependencies
