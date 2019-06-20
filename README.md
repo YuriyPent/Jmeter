@@ -1,4 +1,7 @@
 # Jmeter scripts
+* Start dt-app
+* Start server-agent
+* Execute test_scripts
 ## JMeter-jmx-BeanShellCode
 * Dynamically set the request body with custom variables.
 * The value of the request header is reasonable to use the custom variable to take the value.
