@@ -1,17 +1,3 @@
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
-import javax.crypto.Cipher;
-import javax.crypto.spec.IvParameterSpec;
-import javax.crypto.spec.SecretKeySpec;
-import com.xx.x.util.*;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Properties;
-import com.doctor.commons.*;
-
 try{
         //First take the custom variable, and when you use it, you can't find the definition.
         String secretKey=${secretKey}+"";
@@ -69,14 +55,14 @@ try{
         //Resource release
         if(outputStream!=null){
         outputStream.close();
-                     }
-                }
-            }
+        }
+        }
+        }
         }
 
-    }catch(Exception ex){
+        }catch(Exception ex){
 
         log.info("Script execution failed================PostProcessor=========================",ex);
-}
+        }
 
 
